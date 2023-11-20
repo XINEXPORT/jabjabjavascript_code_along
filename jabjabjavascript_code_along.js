@@ -1,4 +1,4 @@
-////Social Media Liker from JabJabJavascript
+/////////Social Media Liker from JabJabJavascript
 
 function likes(names){
   switch(names.length){
@@ -22,3 +22,33 @@ function likes(names){
 
 // likes(["Peter"]);
 likes(["Peter", "john", "Zoe", "Skipper", "Howard"]);
+
+
+////////COUNT VOWELS USING A FOR LOOP////////
+function countVowels(str){
+    const vowels = "aeiou";
+    let counter = 0;
+    for (let i=0; i<str.length; i++){
+    if (vowels.includes(str[i])){
+        counter++;
+        }
+    }
+    return counter;
+  }
+
+  console.log(countVowels("racecar"))
+
+  ////////COUNT VOWELS USING A FOR OFLOOP////////
+
+  function countVowels(str){
+    const vowels = "aeiou";
+    let counter = 0;
+    for (let elem of str){
+    if (vowels.includes(elem)){
+        counter++;
+        }
+    }
+    return counter;
+  }
+
+  console.log(countVowels("racecar"))
