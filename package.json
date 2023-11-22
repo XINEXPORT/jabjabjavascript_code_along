@@ -1,0 +1,25 @@
+{
+  "name": "jabjabjavascript_code_along",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon jabjab javascript code along.js -w jabjab javascript code along.js -w src -w public -w views -e html,css,js --delay 2.5",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "tone": "^14.7.77",
+    "vite-express": "^0.11.1"
+  }
+}

@@ -52,3 +52,71 @@ function countVowels(str){
   }
 
   console.log(countVowels("racecar"))
+
+  /////Return an Opposite number/////
+
+function opposite(num){
+    return -num
+  }
+  
+  console.log(opposite(-14))
+
+//////Even or Odd?//////////////
+
+function checkEvenOrOdd(num){
+    if (num % 2 === 0){
+    return "It's even!";
+    } else {
+    return "It's odd";
+  }}
+  
+  checkEvenOrOdd(8);
+  checkEvenOrOdd(7);
+
+///or//////
+
+function checkEvenOrOdd(num){
+    if (num % 2 === 0){
+    return "It's even!";
+    }
+    return "It's odd";
+  }
+  
+  checkEvenOrOdd(8);
+  checkEvenOrOdd(7);
+
+  ///or/////
+
+  function checkEvenOrOdd(num){
+    return num % 2 === 0 ? "Even" : "Odd";
+  }
+
+///take in the string that returns the middle characters for that string////
+///if an even amount of characters? Return 1 character at the middle of the string
+///if an odd amount of characters? Return 2 characters at the middle of the string
+
+
+//FUNCTION TO CAPITALIZE EACH WORD IN THE ARRAY
+function capitalize(word){
+    return (word[0].toUpperCase() + word.slice(1).toLowerCase());
+  }
+
+//FUNCTION TO CONVERT A STRING INTO AN ARRAY
+//CALL BACK FUNCTION TO CAPITALIZE EACH WORD IN THE ARRAY
+//CONVERTS THE ARRAY BACK TO A STRING
+
+  function jadenCase(str){
+      let words = str.split(" ");
+      let result = [];
+  for (let word of words){
+    result.push(capitalize(word))
+  }
+   return result.join(" ");
+  }
+
+  jadenCase("How can mirrors be real")
+
+  
+
+
+
